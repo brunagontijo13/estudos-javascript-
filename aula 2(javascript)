@@ -1,0 +1,19 @@
+ function adicionarTarefa() {
+      let mensagem = "Tarefa adicionada com sucesso!";
+
+            let inputTarefa = document.getElementById("tarefa")
+            // Pegao valor do input
+            let tarefa = inputTarefa.value
+            document.getElementById("mensagem").textContent = mensagem;
+            // busca o elemento por id
+           let listaTarefas = document.getElementById("listaTarefas")
+          let novaTarefa = document.createElement("li")
+
+          novaTarefa.textContent = tarefa 
+
+          listaTarefas.appendChild(novaTarefa)
+
+
+
+            inputTarefa.value =""
+    }
